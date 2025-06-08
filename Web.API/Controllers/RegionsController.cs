@@ -13,7 +13,9 @@ namespace Web.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    // [Authorize(Roles = "Admin,User")] // Uncomment if you want to restrict access to specific roles
+    // [Authorize(Roles = "Admin,User")]
+    
+    // Uncomment if you want to restrict access to specific roles
     public class RegionsController : ControllerBase
     {
         private IRegionRepository RegionRepository;
